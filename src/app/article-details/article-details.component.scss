@@ -1,0 +1,16 @@
+.article-details-container {
+    height: 100%;
+    background-color: grey;
+}
+.add-comments {
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.comment-list p {
+    color:white
+}
