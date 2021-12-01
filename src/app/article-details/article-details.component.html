@@ -1,1 +1,18 @@
-<p>article-details works!</p>
+<div class="article-details-container">
+    <div class="add-comments">
+        <div class="comment-field">
+            <form [formGroup]="commentsForm" class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Favorite food</mat-label>
+                  <input matInput formControlName="text" placeholder="Ex. Pizza">
+                </mat-form-field>
+            </form>
+        </div>
+        <div class="add-comment-button">
+            <button mat-button (click)="addComment()">Ajouter</button>
+        </div>
+    </div>
+    <div class="comment-list" *ngFor="let c of comments">
+        <p>{{c.content}}</p>
+    </div>
+</div>

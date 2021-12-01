@@ -1,1 +1,12 @@
-<p>articles-list works!</p>
+<div class="articles-list-container">
+    <div class="articles" *ngFor="let p of posts">
+        <div class="articles-list">
+            {{p.label}}
+        </div>
+        <div class="article-details-button">
+            <button mat-button [routerLink]="['/article', p.id]">Decouvrir</button>
+        </div>
+    </div>
+</div>
+
+
